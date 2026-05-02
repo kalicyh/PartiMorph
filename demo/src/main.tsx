@@ -21,7 +21,7 @@ function DemoApp() {
       element: '[data-parti-source]',
       mode: 'solid',
     },
-    sourceFallbackRect: ({ height, width }) => ({
+    sourceFallbackRect: ({ height, width }: { height: number; width: number }) => ({
       cx: 0,
       cy: 0,
       h: Math.min(420, height * 0.72),
