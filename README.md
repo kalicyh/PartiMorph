@@ -155,6 +155,10 @@ It returns:
 
 A minimal login-to-dashboard demo lives in `demo/`.
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fkalicyh%2FPartiMorph&root-directory=demo)
+
+The deploy button imports this repository and sets Vercel's root directory to `demo/`.
+
 ```bash
 npm run demo
 ```
