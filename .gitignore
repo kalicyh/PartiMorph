@@ -1,0 +1,16 @@
+# Package/install output for publishing this transition plugin independently.
+node_modules/
+dist/
+dist-ssr/
+demo/dist/
+demo/node_modules/
+coverage/
+*.tsbuildinfo
+*.tgz
+
+# Local package manager and environment state.
+.env
+.env.*
+!.env.example
+.turbo/
+.vite/

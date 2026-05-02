@@ -1,0 +1,52 @@
+{
+  "name": "parti-morph",
+  "version": "0.1.0",
+  "description": "React DOM snapshot particle morph transitions.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.json",
+    "demo": "npm --prefix demo install && npm --prefix demo run dev",
+    "prepublishOnly": "npm run build",
+    "pack:dry": "npm pack --dry-run"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "keywords": [
+    "react",
+    "particle",
+    "transition",
+    "page-transition",
+    "threejs",
+    "html2canvas"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "html2canvas": "^1.4.1",
+    "three": "^0.184.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@types/three": "^0.184.0",
+    "typescript": "~5.9.3"
+  }
+}
